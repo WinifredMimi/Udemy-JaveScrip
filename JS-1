@@ -1,0 +1,125 @@
+===JS-1
+一：常見JS的函數
+1.console.log(); //*主要是在網頁的控制台裡面顯示出來
+2.alert(); //會出現在網站顯示出的一個視窗，讓使用者知道一些資訊；點確認就可以消失
+3.prompt();//會出現一個視窗，你可以輸入一些東西；
+
+
+
+二：變數
+1.=    //assign等號右邊的值放入左邊的變數
+2.let  //先設置一個數字let x=5，如果又有其他宣告 x=6，則為6；不能連續宣告let做兩次以上；可以reassignment、不可redeclaration；
+3.const //consr x=6;先設定為6，如果在設定x=7，則會顯示錯誤；只能assignment x=6；不可以reassignment、不可redeclaration；
+4.var //可以reassignment、可以redeclaration
+
+
+
+三：Numbers operators運算符號
+1.加、減、乘、除
+2.remainder operators //（餘數）ex：5%2=1
+3.power // （次方）ex：7**4==7的4次方
+4.++ //ex:
+let x = 0;
+x++; //(x=x+1)
+console.log(x); //結果是 =1
+5.+= //ex：
+let x=0;
+x+=10; //x =x + 10;
+console.log(x);//結果是 =10
+
+
+
+四：string（字串）
+1.文字string //加入【”“】
+-string concatenate 串接 [+]（文字只有加、沒有減=除非是number）
+ex:
+let name ="winifred";
+let greeting="hi"
+console.log(greeting+" "+ name ); //結果： hi winifred
+
+2.數字string//
+-ex：
+let name ="winifred";
+let age="24";
+console.log(name+age); // 結果：winifred24
+
+number => string ---number.toString
+string => number ---Number(string)
+
+五：comments
+1. /* xdjkfbej */
+2. //
+3. /** */
+
+
+
+六：primitive Data Types（基本的資料類型-js儲存資料的方式）
+1.Number
+-ex：
+let age = 27;
+console.log(age.toString()+10);// tostring是把數字變文字字串，結果：2710
+
+-ex：
+let pi =3.1415926;
+console.log(pi.toFixed(2));//toFixed是拿小數點後幾位數，結果：3.14 
+
+2.String
+-length
+let name="winifred";
+console.log(name.length); //計算有多少個
+
+-slice() //切片
+let name = "wilson";
+console.log(name.slice(3,5));//結果=so，而不是sn；
+
+-index() //索引
+"winifred" 會定義從0開始數起，index number;如果length=x，index從0，1，2。。。x-1
+ex：
+let name ="winifred"；
+console.log(name[4]);// = f
+
+ex:
+let name ="wilson";
+console.log(name.indexOf("son"));//告訴你從3開始就看到；
+
+-split()
+ex:
+let name ="wilson has live in taiwai";
+console.log(name.split(" "));
+//""裡面有空白鍵，就會顯示0：“wilson” 1:“has” 2:“live”。。。 length：5
+//""裡面沒有空白鍵，就會每個字母來顯示
+
+-toLowerCase()
+ex:
+let name ="wilson";
+console.log(name.toLowerCase());//全部小寫
+
+-toUpperCase()//全部大寫
+ex:
+let name ="wilson";
+console.log(name.UpperCase().indexOf("l"));//找到l就會大寫它
+
+3.Boolean
+-true
+ex：
+let isPremium = "true";
+console.log(isPremium);
+-false
+
+**typeof operator//找他們的type是什麼
+let x= "true"; string
+let y="true";Boolean
+console.log(typeof x,typeof y); //結果顯示string，boolean
+
+4.Undefined //未被定義,but is waiting for assignment
+let x;
+console.log(x); //result:undefined
+
+5.null //tell us,there's nothing
+let y = null;
+console.log(y);//result:null
+
+6.Symbol
+let z =Symbol();
+console.log(z);//result: symbol()
+
