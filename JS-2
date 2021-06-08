@@ -77,3 +77,22 @@ if(isNaN(age)){
         alert("請輸入正確的年齡（年齡必須小於等於150）")
     }
 }
+
+
+
+
+
+四：Truthy（除了以下6種都是） and Falsy Values（1-6）
+1.false
+2.0
+3.“”
+4.null
+5.undefined
+6.NaN
+
+let x=10;
+if(x){
+    console.log("this is a truthy value");
+} else{
+    console.log("this is a falsy value"):
+}
