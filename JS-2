@@ -1,0 +1,79 @@
+====Javascript-2
+一：Logical operator
+1.returns a Boolean value
+- 有==，===
+== :is comparing if the vaule are the same on both side
+ex：
+console.log(3 == 3); //result:true
+console.log(3 =="3");// result:true; type is differnent,but value is the same
+console.log(3 ==="3");//result:false ; value is the same,but type is differnent
+
+-有！=，！== （不等於）
+console.log(4 != "4");//result:false; values are differnent
+console.log(4 !=="4");//result:true; value & types are differnent
+
+-有>,<,>=,<=,
+
+
+
+二：and、or operator
+1.and 且 &&
+let condition1 = 3>2;//true
+let condition2 = 5>6;//false
+console.log(condition1 && condition2);//result:false
+console.log(condition1 || condition2);//result:true
+
+2.or 或 ||
+let isPremium = true;//boolean
+let isOver18 = false;
+console.log(isPremium && isOver18);//false
+console.log(isPremium || isOver18);//true
+
+
+
+三：if statemen & condition syntax
+1.格式：
+if (){
+    //code
+}
+
+ex:
+if (thereIsInter == true){
+    console.log("Exectue the running game");
+}else{
+    console.log("display the google search pages");
+}
+
+應用：0-12歲兒童票$100，12-65 成人票$250，65- $150
+let age = prompt("your age:");
+
+if (age <=12){
+    alert("your price is 100");
+}else if((age>12) && (age <=65)){
+    alert("your price is 250"):
+}else{
+    alert("your price is 150")
+}
+
+===========================
+
+let age = prompt("your age:");
+
+age =Number(age);
+console.log(age,typeof age);
+
+if(isNaN(age)){
+    alert("請輸入阿拉伯數字")；
+}else{
+    if (age <0){
+        alert("請輸入正確的年齡（年齡必須大於0）")
+    }else if (age <=12){
+        alert("your price is 100");
+    }else if((age>12) && (age <=65)){
+        alert("your price is 250"):
+    }else if((age>65) &&(age<150)){ 
+        alert("your price is 150")
+    }else{
+        alert("請輸入正確的年齡（年齡必須小於等於150）")
+    }
+}
